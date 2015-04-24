@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <cron>
+    <url>/recache</url>
+    <description>Repopulate the cache every 2 minutes</description>
+    <schedule>every 2 minutes</schedule>
+  </cron>
+  <!-- 
+  <cron>
+    (必要)<url>/weeklyreport</url>
+    (必要)<schedule>every monday of month 08:30</schedule>
+    (非必要)<description>Mail out a weekly report</description>
+    (非必要)<timezone>America/New_York</timezone>
+  </cron>
+   -->
+</cronentries>
+
+<!-- 
+您可以使用 AppCfg 上傳 Cron 任務。當您使用 AppCfg update 將應用程式上傳到「應用服務引擎」時，
+Cron Service 會隨著 cron.xml 內容一起更新。您可以使用 AppCfg update_cron 僅更新 Cron 
+設定而不上傳其餘的應用程式。若要刪除所有的 Cron 任務，請將 cron.xml 檔案變更為僅包含：
+
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries/>
+ -->
